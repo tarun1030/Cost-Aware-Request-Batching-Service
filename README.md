@@ -218,8 +218,8 @@ FastAPI service that batches LLM (Gemini) requests by priority, runs one combine
                                  ┌─────────────────────┐
                                  │     LLMClient       │
                                  │  - Gemini API       │
-                                 │  - get_api_key()   │
-                                 │  - get_thresholds()│
+                                 │  - get_api_key()    │
+                                 │  - get_thresholds() │
                                  └─────────────────────┘
 ```
 
@@ -333,9 +333,9 @@ Request timeout is derived from configured `latency_ms` for the priority (e.g. `
 ```json
 {
   "api_key": "***xxxx",
-  "high_priority":   { "tokens": 1000, "latency_ms": 500 },
-  "medium_priority": { "tokens": 5000, "latency_ms": 2000 },
-  "low_priority":    { "tokens": 10000, "latency_ms": 5000 }
+  "high_priority":   { "tokens": 512, "latency_ms": 500 },
+  "medium_priority": { "tokens": 1024, "latency_ms": 500 },
+  "low_priority":    { "tokens": 1800, "latency_ms": 500 }
 }
 ```
 
@@ -346,9 +346,9 @@ Request timeout is derived from configured `latency_ms` for the priority (e.g. `
 ```json
 {
   "api_key": "your-gemini-api-key",
-  "high_priority":   { "tokens": 1000, "latency_ms": 500 },
-  "medium_priority": { "tokens": 5000, "latency_ms": 2000 },
-  "low_priority":    { "tokens": 10000, "latency_ms": 5000 }
+  "high_priority":   { "tokens": 512, "latency_ms": 500 },
+  "medium_priority": { "tokens": 1024, "latency_ms": 500 },
+  "low_priority":    { "tokens": 1800, "latency_ms": 500 }
 }
 ```
 
@@ -402,7 +402,7 @@ Only provided fields are updated. Response shape matches GET /v1/settings.
 python -m venv venv
 source venv/bin/activate   # Windows: venv\Scripts\activate
 pip install -r requirements.txt
-uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
+uvicorn app.main:app --reload --host 127.0.0.1 --port 8000
 ```
 
 - Health: `GET http://localhost:8000/health`
