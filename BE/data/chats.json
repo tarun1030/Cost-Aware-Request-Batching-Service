@@ -1,0 +1,539 @@
+[
+  {
+    "timestamp": "2026-02-01T12:00:33.572010+00:00",
+    "request": {
+      "username": "user",
+      "request_id": "8eb386ec-aa4e-4339-b1be-7f41af73a16f",
+      "prompt": "How do I configure API authentication?",
+      "created_at": "2026-02-01T12:00:28.881000Z",
+      "priority": 2
+    },
+    "response": {
+      "request_id": "8eb386ec-aa4e-4339-b1be-7f41af73a16f",
+      "username": "user",
+      "text": "API authentication typically involves generating credentials (like API keys or tokens) from your service provider. You then include these credentials in your API requests, often in the `Authorization` header or as a query parameter, following the API's specific documentation.",
+      "tokens_used": 288,
+      "latency_ms": 4690.31,
+      "created_at": "2026-02-01T12:00:28.881000Z",
+      "completed_at": "2026-02-01T12:00:33.571310Z"
+    }
+  },
+  {
+    "timestamp": "2026-02-01T12:00:33.572822+00:00",
+    "request": {
+      "username": "chai",
+      "request_id": "c0aedca2-8490-4be6-a8ce-3b2491b12173",
+      "prompt": "what is ML",
+      "created_at": "2026-02-01T12:00:28.882000Z",
+      "priority": 2
+    },
+    "response": {
+      "request_id": "c0aedca2-8490-4be6-a8ce-3b2491b12173",
+      "username": "chai",
+      "text": "Machine Learning (ML) is a subset of Artificial Intelligence that enables systems to learn from data and improve performance on a specific task without being explicitly programmed. It involves algorithms that build a model from sample data to make predictions or decisions.",
+      "tokens_used": 288,
+      "latency_ms": 4689.3099999999995,
+      "created_at": "2026-02-01T12:00:28.882000Z",
+      "completed_at": "2026-02-01T12:00:33.571310Z"
+    }
+  },
+  {
+    "timestamp": "2026-02-01T12:00:33.573350+00:00",
+    "request": {
+      "username": "tarun",
+      "request_id": "44095cea-6e74-435d-a72f-36a5d0cc15c3",
+      "prompt": "what is AI",
+      "created_at": "2026-02-01T12:00:28.881000Z",
+      "priority": 2
+    },
+    "response": {
+      "request_id": "44095cea-6e74-435d-a72f-36a5d0cc15c3",
+      "username": "tarun",
+      "text": "Artificial Intelligence (AI) refers to the simulation of human intelligence in machines programmed to think and learn like humans. It encompasses various fields like machine learning, natural language processing, and computer vision, enabling machines to perform tasks that typically require human cognition.",
+      "tokens_used": 288,
+      "latency_ms": 4690.31,
+      "created_at": "2026-02-01T12:00:28.881000Z",
+      "completed_at": "2026-02-01T12:00:33.571310Z"
+    }
+  },
+  {
+    "timestamp": "2026-02-01T12:06:24.846779+00:00",
+    "batch_id": "f26f4081-2dd3-40c0-860d-284e30acdd1a",
+    "request": {
+      "username": "user@example.com",
+      "request_id": "8c119d7d-8e09-42c1-a998-a1e18fc72226",
+      "prompt": "How do I configure API authentication?",
+      "created_at": "2026-02-01T12:06:20.673000Z",
+      "priority": 2
+    },
+    "response": {
+      "request_id": "8c119d7d-8e09-42c1-a998-a1e18fc72226",
+      "username": "user@example.com",
+      "text": "Configure API authentication by generating credentials like API keys or tokens on your server. Include these credentials in your API request headers or body for verification. Always ensure secure storage and transmission of these authentication details.",
+      "tokens_used": 291,
+      "latency_ms": 4172.327,
+      "created_at": "2026-02-01T12:06:20.673000Z",
+      "completed_at": "2026-02-01T12:06:24.845327Z"
+    }
+  },
+  {
+    "timestamp": "2026-02-01T12:06:24.847723+00:00",
+    "batch_id": "f26f4081-2dd3-40c0-860d-284e30acdd1a",
+    "request": {
+      "username": "tarun",
+      "request_id": "8e94977a-47eb-4f48-a7f9-fbc8e76acd29",
+      "prompt": "what are ml models",
+      "created_at": "2026-02-01T12:06:20.674000Z",
+      "priority": 2
+    },
+    "response": {
+      "request_id": "8e94977a-47eb-4f48-a7f9-fbc8e76acd29",
+      "username": "tarun",
+      "text": "ML models are algorithms trained on data to recognize patterns and make predictions or decisions. They learn from examples to perform specific tasks without being explicitly programmed for each outcome.",
+      "tokens_used": 290,
+      "latency_ms": 4171.327,
+      "created_at": "2026-02-01T12:06:20.674000Z",
+      "completed_at": "2026-02-01T12:06:24.845327Z"
+    }
+  },
+  {
+    "timestamp": "2026-02-01T12:08:03.081894+00:00",
+    "batch_id": "e676c031-350f-4c32-9cad-77584e888f23",
+    "request": {
+      "username": "user@example.com",
+      "request_id": "df401b6c-b0c4-480b-9a84-0e96612af8ff",
+      "prompt": "How do I configure API authentication?",
+      "created_at": "2026-02-01T12:07:56.989000Z",
+      "priority": 1
+    },
+    "response": {
+      "request_id": "df401b6c-b0c4-480b-9a84-0e96612af8ff",
+      "username": "user@example.com",
+      "text": "Configuring API authentication typically involves choosing a method like API Keys, OAuth 2.0, or JSON Web Tokens (JWT). For API Keys, you generate a unique key and include it in request headers (e.g., `X-API-Key` or `Authorization: Bearer`) or as a query parameter. For OAuth 2.0, clients obtain an access token after user authorization, then include this token in an `Authorization: Bearer <token>` header. JWTs follow a similar pattern but are self-contained and cryptographically signed. Server-side, you validate the provided credentials against your stored keys, tokens, or by verifying the JWT's signature and claims. Always prioritize secure storage of keys/secrets and enforce HTTPS.",
+      "tokens_used": 576,
+      "latency_ms": 6092.099,
+      "created_at": "2026-02-01T12:07:56.989000Z",
+      "completed_at": "2026-02-01T12:08:03.081099Z"
+    }
+  },
+  {
+    "timestamp": "2026-02-01T12:08:03.082600+00:00",
+    "batch_id": "e676c031-350f-4c32-9cad-77584e888f23",
+    "request": {
+      "username": "tarun",
+      "request_id": "fcc164cf-91c8-48cb-bab3-03dbd7a304b5",
+      "prompt": "kyc",
+      "created_at": "2026-02-01T12:07:56.989000Z",
+      "priority": 1
+    },
+    "response": {
+      "request_id": "fcc164cf-91c8-48cb-bab3-03dbd7a304b5",
+      "username": "tarun",
+      "text": "KYC, or 'Know Your Customer,' is a mandatory process for businesses, particularly financial institutions, to verify the identity of their clients. Its primary purpose is to prevent financial crimes like money laundering, terrorist financing, and fraud, while ensuring regulatory compliance. The process typically involves collecting and verifying personal information such as name, address, date of birth, and government-issued identification (e.g., passport, driver's license). Advanced KYC often includes checks against sanctions lists and politically exposed persons (PEPs) databases to assess risk and meet regulatory obligations.",
+      "tokens_used": 576,
+      "latency_ms": 6092.099,
+      "created_at": "2026-02-01T12:07:56.989000Z",
+      "completed_at": "2026-02-01T12:08:03.081099Z"
+    }
+  },
+  {
+    "timestamp": "2026-02-01T12:34:23.941638+00:00",
+    "batch_id": "f0b8b903-3e48-4ee6-bb3e-30d377078444",
+    "request": {
+      "username": "user@example.com",
+      "request_id": "3f849749-8136-4994-a541-536b33b28d7c",
+      "prompt": "How do I configure API authentication?",
+      "created_at": "2026-02-01T12:34:20.434000Z",
+      "priority": 2
+    },
+    "response": {
+      "request_id": "3f849749-8136-4994-a541-536b33b28d7c",
+      "username": "user@example.com",
+      "text": "API authentication is typically configured by including credentials like API keys, OAuth tokens, or JWTs in your request headers (e.g., Authorization) or as query parameters. Refer to the specific API's documentation for exact implementation details and required methods.",
+      "tokens_used": 366,
+      "latency_ms": 3505.953,
+      "created_at": "2026-02-01T12:34:20.434000Z",
+      "completed_at": "2026-02-01T12:34:23.939953Z"
+    }
+  },
+  {
+    "timestamp": "2026-02-01T12:37:47.792652+00:00",
+    "batch_id": "8f8e92b9-807e-4cb7-bda4-4aca66617908",
+    "request": {
+      "username": "user@example.com",
+      "request_id": "3b7067f5-195e-4eb8-bcf0-9aea2052533f",
+      "prompt": "How do I configure API authentication?",
+      "created_at": "2026-02-01T12:37:44.849000Z",
+      "priority": 2
+    },
+    "response": {
+      "request_id": "3b7067f5-195e-4eb8-bcf0-9aea2052533f",
+      "username": "user@example.com",
+      "text": "To configure API authentication, you typically generate an API key or token from your service provider's dashboard. You then include this key in the header or body of your API requests, often using schemes like Bearer tokens or basic authentication. Consult your API's documentation for exact implementation details.",
+      "tokens_used": 363,
+      "latency_ms": 2942.1110000000003,
+      "created_at": "2026-02-01T12:37:44.849000Z",
+      "completed_at": "2026-02-01T12:37:47.791111Z"
+    }
+  },
+  {
+    "timestamp": "2026-02-01T12:38:29.081949+00:00",
+    "batch_id": "17e11eb6-2a6c-460f-a486-4d6691344493",
+    "request": {
+      "username": "user@example.com",
+      "request_id": "830ace7b-591e-45ee-b003-bb9e45232ab8",
+      "prompt": "How do I configure API authentication?",
+      "created_at": "2026-02-01T12:38:25.999000Z",
+      "priority": 2
+    },
+    "response": {
+      "request_id": "830ace7b-591e-45ee-b003-bb9e45232ab8",
+      "username": "user@example.com",
+      "text": "API authentication is configured by including credentials like API keys, OAuth tokens, or JWTs in request headers or body. Refer to the API provider's documentation for specific implementation details and required parameters.",
+      "tokens_used": 349,
+      "latency_ms": 3080.302,
+      "created_at": "2026-02-01T12:38:25.999000Z",
+      "completed_at": "2026-02-01T12:38:29.079302Z"
+    }
+  },
+  {
+    "timestamp": "2026-02-01T12:40:32.004294+00:00",
+    "batch_id": "85d9a52d-e99d-4a2a-9fd0-9283e294926c",
+    "request": {
+      "username": "user@example.com",
+      "request_id": "90f4ff40-e341-4ef7-8efc-72d56197a042",
+      "prompt": "How do I configure API authentication?",
+      "created_at": "2026-02-01T12:40:28.548000Z",
+      "priority": 2
+    },
+    "response": {
+      "request_id": "90f4ff40-e341-4ef7-8efc-72d56197a042",
+      "username": "user@example.com",
+      "text": "API authentication typically involves using API keys, OAuth 2.0, or JWTs. You configure it by generating credentials and then including them in your API requests, usually in headers or as part of the request body. The server then validates these credentials to grant access.",
+      "tokens_used": 405,
+      "latency_ms": 3455.2200000000003,
+      "created_at": "2026-02-01T12:40:28.548000Z",
+      "completed_at": "2026-02-01T12:40:32.003220Z"
+    }
+  },
+  {
+    "timestamp": "2026-02-01T12:56:44.911140+00:00",
+    "batch_id": "5c36717d-6e9e-4de4-9859-d5e77dc93d42",
+    "request": {
+      "username": "user@example.com",
+      "request_id": "e3d0d5e7-dd99-4909-b80a-34330d68c35c",
+      "prompt": "what is GenAI",
+      "created_at": "2026-02-01T12:56:39.946000Z",
+      "priority": 1
+    },
+    "response": {
+      "request_id": "e3d0d5e7-dd99-4909-b80a-34330d68c35c",
+      "username": "user@example.com",
+      "text": "Generative AI (GenAI) is a type of artificial intelligence capable of creating new, original content rather than just analyzing or classifying existing data. Unlike traditional AI that might predict an outcome or categorize an input, GenAI models learn patterns and structures from vast datasets (text, images, audio, etc.) and then generate novel outputs that resemble the training data but are not direct copies. Key applications include generating text, images, code, music, and video, often using deep learning architectures like transformers.",
+      "tokens_used": 375,
+      "latency_ms": 4964.04,
+      "created_at": "2026-02-01T12:56:39.946000Z",
+      "completed_at": "2026-02-01T12:56:44.910040Z"
+    }
+  },
+  {
+    "timestamp": "2026-02-01T12:58:07.065837+00:00",
+    "batch_id": "61c59baf-dc9e-43ee-8333-d543f41ac7d5",
+    "request": {
+      "username": "user@example.com",
+      "request_id": "1c6a89d3-8506-4191-805f-f3824d240193",
+      "prompt": "what is GenAI",
+      "created_at": "2026-02-01T12:57:54.762000Z",
+      "priority": 0
+    },
+    "response": {
+      "request_id": "1c6a89d3-8506-4191-805f-f3824d240193",
+      "username": "user@example.com",
+      "text": "Generative AI (GenAI) is a sophisticated branch of artificial intelligence capable of creating new, original content rather than merely analyzing or classifying existing data. Unlike traditional AI models that might predict outcomes or recognize patterns (e.g., classifying images as cat or dog), GenAI models learn from vast amounts of existing data to understand underlying patterns, structures, and styles, and then use that learned knowledge to 'generate' novel outputs that resemble the training data but are not direct copies. This generative capability allows it to produce diverse forms of content, including text, images, audio, video, code, and 3D models.\n\n**How it Works (Underlying Principles):**\nAt its core, GenAI relies heavily on deep learning, particularly neural network architectures like Transformers, Variational Autoencoders (VAEs), and Generative Adversarial Networks (GANs). These models are trained on massive datasets (e.g., billions of text documents, images, or audio clips). During training, the model learns the statistical distribution and complex relationships within the data. For instance, a text generation model learns grammar, syntax, semantics, factual knowledge, and various writing styles by processing vast amounts of human-written text. Once trained, when given a prompt or a starting point (e.g., 'write a poem about a futuristic city' or 'generate an image of a cat riding a bicycle in space'), the model uses its internal representation of the learned patterns to predict and construct a coherent and contextually relevant output, token by token, pixel by pixel, or frame by frame.\n\n**Key Characteristics:**\n1.  **Generative Nature:** Its primary function is to create something new, not just classify or predict based on existing categories.\n2.  **Creativity/Novelty:** It can produce outputs that are unique and have never existed before, often exhibiting a level of 'creativity.'\n3.  **Multimodal Capabilities:** While some models specialize (e.g., text only), many advanced GenAI systems can handle and generate content across different modalities (e.g., text-to-image, image-to-text, text-to-video).\n4.  **Contextual Understanding:** Especially large language models (LLMs), GenAI systems demonstrate a remarkable ability to understand and respond to complex prompts, maintaining context over extended interactions.\n5.  **Scalability:** The performance often improves significantly with more training data and larger model sizes.\n\n**Examples of GenAI Models and Tools:**\n*   **Text Generation:** ChatGPT (OpenAI), Gemini (Google), Claude (Anthropic), Llama (Meta) – capable of writing essays, poems, code, summaries, translations, and engaging in conversational AI.\n*   **Image Generation:** DALL-E 2/3 (OpenAI), Midjourney, Stable Diffusion – can create photorealistic or stylized images from text descriptions.\n*   **Audio Generation:** Google's MusicLM, OpenAI's Jukebox, ElevenLabs – generate music, speech, sound effects, or clone voices.\n*   **Video Generation:** RunwayML, Pika Labs, OpenAI's Sora – create short video clips from text prompts or existing images.\n*   **Code Generation:** GitHub Copilot (powered by OpenAI Codex), AlphaCode (DeepMind) – assist developers by generating code snippets, completing functions, or even entire programs.\n\n**Applications and Use Cases:**\n*   **Content Creation:** Generating marketing copy, articles, social media posts, stories, scripts, and personalized content at scale.\n*   **Design and Art:** Creating unique visual assets, concept art, product designs, architectural visualizations.\n*   **Software Development:** Autocompleting code, generating test cases, translating code between languages, debugging assistance.\n*   **Customer Service:** Powering advanced chatbots that can understand complex queries and provide human-like responses.\n*   **Education:** Creating personalized learning materials, generating quizzes, explaining complex topics.\n*   **Scientific Research:** Assisting with drug discovery (generating novel molecular structures), material science (designing new materials), and data synthesis.\n*   **Personal Productivity:** Summarizing long documents, drafting emails, brainstorming ideas.\n\n**Context and Significance:**\nGenAI represents a significant leap forward in AI capabilities, moving beyond analytical tasks to true content creation. It has the potential to revolutionize numerous industries by automating creative tasks, accelerating innovation, and enabling new forms of human-computer interaction. However, it also presents challenges and ethical considerations, including concerns about misinformation ('deepfakes'), copyright infringement, intellectual property, bias in generated content, and the potential impact on jobs requiring creative or cognitive labor. Understanding GenAI is crucial as it continues to evolve and integrate into various facets of daily life and work.",
+      "tokens_used": 1456,
+      "latency_ms": 12302.09,
+      "created_at": "2026-02-01T12:57:54.762000Z",
+      "completed_at": "2026-02-01T12:58:07.064090Z"
+    }
+  },
+  {
+    "timestamp": "2026-02-01T13:04:57.159796+00:00",
+    "batch_id": "3724f1ad-53e7-444f-850c-b49bc9caf2a7",
+    "request": {
+      "username": "user@example.com",
+      "request_id": "0ae3393a-42cf-4136-a648-f40921d89440",
+      "prompt": "what is AI",
+      "created_at": "2026-02-01T13:04:44.361000Z",
+      "priority": 0
+    },
+    "response": {
+      "request_id": "0ae3393a-42cf-4136-a648-f40921d89440",
+      "username": "user@example.com",
+      "text": "Artificial Intelligence (AI) is a broad field of computer science dedicated to creating machines that can perform tasks that typically require human intelligence. The core goal of AI is to enable machines to perceive, reason, learn, understand, and act in ways that mimic or even surpass human cognitive abilities. It encompasses various techniques and methodologies designed to make computers 'smart'.",
+      "tokens_used": 715,
+      "latency_ms": 12797.154,
+      "created_at": "2026-02-01T13:04:44.361000Z",
+      "completed_at": "2026-02-01T13:04:57.158154Z"
+    }
+  },
+  {
+    "timestamp": "2026-02-01T13:04:57.161534+00:00",
+    "batch_id": "3724f1ad-53e7-444f-850c-b49bc9caf2a7",
+    "request": {
+      "username": "tarun",
+      "request_id": "a5516b4b-a82c-4849-b693-4f76c57985f0",
+      "prompt": "what is GenAi",
+      "created_at": "2026-02-01T13:04:44.362000Z",
+      "priority": 0
+    },
+    "response": {
+      "request_id": "a5516b4b-a82c-4849-b693-4f76c57985f0",
+      "username": "tarun",
+      "text": "Generative AI (GenAI) is a specialized subset of Artificial Intelligence focused on creating new, original content rather than merely analyzing or classifying existing data. Unlike traditional AI models that might predict an outcome or categorize an input (discriminative AI), generative AI models are designed to 'generate' novel outputs across various modalities, such as text, images, audio, video, and code, that are similar to the data they were trained on but are not direct copies.",
+      "tokens_used": 715,
+      "latency_ms": 12796.154,
+      "created_at": "2026-02-01T13:04:44.362000Z",
+      "completed_at": "2026-02-01T13:04:57.158154Z"
+    }
+  },
+  {
+    "timestamp": "2026-02-01T13:29:35.241972+00:00",
+    "batch_id": "3930e612-e1f6-41c8-8bd6-8244cae5374f",
+    "request": {
+      "username": "user@example.com",
+      "request_id": "5289f481-923d-4c45-8a59-374461d4dfd3",
+      "prompt": "What is ML?",
+      "created_at": "2026-02-01T13:29:03.841000Z",
+      "priority": 0
+    },
+    "response": {
+      "request_id": "5289f481-923d-4c45-8a59-374461d4dfd3",
+      "username": "user@example.com",
+      "text": "Machine Learning (ML) is a subset of Artificial Intelligence (AI) that enables systems to learn from data, identify patterns, and make decisions or predictions with minimal human intervention. Unlike traditional programming, where rules are explicitly coded, ML algorithms build a mathematical model based on sample data, known as 'training data', to make predictions or decisions without being explicitly programmed for every possible scenario. The core idea is to teach computers to learn by example, much like humans do, improving their performance on a specific task over time with more data and experience.",
+      "tokens_used": 420,
+      "latency_ms": 31393.937,
+      "created_at": "2026-02-01T13:29:03.841000Z",
+      "completed_at": "2026-02-01T13:29:35.234937Z"
+    }
+  },
+  {
+    "timestamp": "2026-02-01T13:33:38.703395+00:00",
+    "batch_id": "fe33f807-5921-47d4-81b4-d3f880a55592",
+    "request": {
+      "username": "user@example.com",
+      "request_id": "390a69fd-0b83-4516-94da-d103db9815fc",
+      "prompt": "What is ML?",
+      "created_at": "2026-02-01T13:33:18.568000Z",
+      "priority": 0
+    },
+    "response": {
+      "request_id": "390a69fd-0b83-4516-94da-d103db9815fc",
+      "username": "user@example.com",
+      "text": "Machine Learning (ML) is a subset of Artificial Intelligence (AI) that empowers computer systems to learn from data, identify patterns, and make decisions or predictions without being explicitly programmed for every specific task. Instead of writing rigid, step-by-step instructions for every possible scenario, ML models are 'trained' by being fed large amounts of data, from which they automatically discover underlying relationships, rules, and insights. The core idea is that the system learns to improve its performance on a given task over time through experience (data).\n\n**How Machine Learning Works (Conceptual Steps):**\n1.  **Data Collection and Preparation:** Gather and clean a relevant dataset. This data can be structured (tables) or unstructured (images, text, audio).\n2.  **Feature Engineering (Optional but Common):** In traditional ML, relevant features (attributes) are often extracted or engineered from the raw data that the model can use to learn patterns.\n3.  **Model Training:** An ML algorithm is selected and fed the prepared data. During training, the algorithm adjusts its internal parameters (e.g., weights, biases) to minimize the difference between its predictions and the actual outcomes (if known, in supervised learning). This iterative process aims to build a 'model' that captures the data's patterns.\n4.  **Model Evaluation:** The trained model's performance is assessed using a separate dataset (test set) to ensure it generalizes well to new, unseen data.\n5.  **Prediction/Inference:** Once evaluated and deemed satisfactory, the model can be deployed to make predictions or decisions on new input data.\n\n**Key Paradigms/Types of Machine Learning:**\n*   **Supervised Learning:** This is the most common type. The model learns from 'labeled' data, meaning each input example has a corresponding desired output. The goal is to learn a mapping from inputs to outputs.\n    *   **Examples:**\n        *   **Classification:** Predicting a categorical label (e.g., spam/not spam email, benign/malignant tumor from medical images, dog/cat in an image).\n        *   **Regression:** Predicting a continuous numerical value (e.g., house price based on features, stock market price, temperature forecasting).\n    *   **Algorithms:** Linear Regression, Logistic Regression, Support Vector Machines (SVMs), Decision Trees, Random Forests, K-Nearest Neighbors (KNN).\n\n*   **Unsupervised Learning:** The model learns from 'unlabeled' data, meaning there are no predefined output labels. The goal is to discover hidden patterns, structures, or relationships within the data itself.\n    *   **Examples:**\n        *   **Clustering:** Grouping similar data points together (e.g., customer segmentation for marketing, organizing news articles by topic).\n        *   **Dimensionality Reduction:** Reducing the number of features in a dataset while retaining important information (e.g., compressing images, visualizing high-dimensional data).\n        *   **Association Rule Mining:** Discovering relationships between variables (e.g., 'customers who buy X also tend to buy Y').\n    *   **Algorithms:** K-Means Clustering, Hierarchical Clustering, Principal Component Analysis (PCA).\n\n*   **Reinforcement Learning (RL):** An agent learns to make sequences of decisions by interacting with an environment. It receives 'rewards' for desirable actions and 'penalties' for undesirable ones, aiming to maximize its cumulative reward over time through trial and error.\n    *   **Examples:** Training a robot to navigate a maze, teaching an AI to play complex games (like Chess or Go, e.g., AlphaGo), autonomous driving systems, resource management.\n    *   **Components:** Agent, Environment, State, Action, Reward.\n\n**Context and Importance:** ML is a transformative technology driving innovation across virtually every industry. It powers personalized recommendations (Netflix, Amazon), fraud detection, medical diagnosis, natural language processing (chatbots, translation), autonomous vehicles, scientific discovery, and much more. Its ability to extract insights from vast datasets makes it indispensable for data-driven decision-making and automation.",
+      "tokens_used": 1752,
+      "latency_ms": 20133.381,
+      "created_at": "2026-02-01T13:33:18.568000Z",
+      "completed_at": "2026-02-01T13:33:38.701381Z"
+    }
+  },
+  {
+    "timestamp": "2026-02-01T13:33:38.718842+00:00",
+    "batch_id": "fe33f807-5921-47d4-81b4-d3f880a55592",
+    "request": {
+      "username": "srinu",
+      "request_id": "5d62c998-0c2d-453a-a74b-97b45cad48bd",
+      "prompt": "what is DL",
+      "created_at": "2026-02-01T13:33:18.569000Z",
+      "priority": 0
+    },
+    "response": {
+      "request_id": "5d62c998-0c2d-453a-a74b-97b45cad48bd",
+      "username": "srinu",
+      "text": "Deep Learning (DL) is a specialized subfield within Machine Learning (ML) that employs artificial neural networks with multiple layers (hence 'deep') to learn intricate patterns and representations from data. Inspired by the structure and function of the human brain, deep neural networks are designed to automatically learn hierarchical features from raw input, progressing from simpler features in early layers to more complex, abstract representations in deeper layers.\n\n**Core Concepts of Deep Learning:**\n1.  **Deep Neural Networks (DNNs):** These networks consist of an input layer, an output layer, and critically, multiple 'hidden' layers in between. Each layer is composed of interconnected nodes (neurons), and the 'depth' refers to the number of hidden layers.\n2.  **Automatic Feature Learning:** One of DL's most significant advantages over traditional ML is its ability to automatically extract relevant features from raw data. For instance, in image recognition, a deep network might learn to detect edges in its first hidden layer, then shapes in the next, and finally complex objects (like faces or cars) in subsequent layers, without explicit human programming for each feature.\n3.  **Backpropagation:** The primary algorithm for training deep neural networks. It involves calculating the error between the network's output and the actual target, then propagating this error backward through the network to adjust the weights and biases of each neuron in a way that minimizes the error.\n4.  **Activation Functions:** Non-linear functions applied to the output of each neuron, allowing the network to learn complex, non-linear relationships within the data.\n5.  **Computational Power:** Deep learning models, especially during training, require significant computational resources, often utilizing Graphics Processing Units (GPUs) or Tensor Processing Units (TPUs) due to their parallel processing capabilities.\n\n**How Deep Learning Works (Simplified):**\n*   **Forward Pass:** Input data is fed into the network's input layer and propagates forward through the hidden layers. Each neuron in a layer performs a weighted sum of its inputs, adds a bias, and applies an activation function, passing its output to the next layer.\n*   **Prediction:** The output layer produces the network's prediction (e.g., a classification label or a numerical value).\n*   **Loss Calculation:** A loss function measures the difference (error) between the network's prediction and the actual target value.\n*   **Backpropagation & Optimization:** The calculated loss is propagated backward through the network. An optimization algorithm (like Gradient Descent) uses this error information to adjust the weights and biases of the neurons in each layer, aiming to reduce the loss in subsequent forward passes.\n*   **Iteration:** This process of forward pass, loss calculation, backpropagation, and weight update is repeated over many 'epochs' (full passes through the training dataset) until the model's performance on the training data converges or stops improving.\n\n**Key Deep Learning Architectures:**\n*   **Feedforward Neural Networks (FNNs) / Multi-Layer Perceptrons (MLPs):** The foundational deep networks where information flows in one direction, from input to output, without loops.\n*   **Convolutional Neural Networks (CNNs):** Highly effective for processing grid-like data, such as images, video, and audio. They use 'convolutional layers' to automatically learn spatial hierarchies of features.\n    *   **Examples:** Image classification, object detection (e.g., in autonomous cars), facial recognition, medical image analysis.\n*   **Recurrent Neural Networks (RNNs):** Designed for sequential data, where the order of data points matters (e.g., time series, natural language). They have internal memory (loops) that allows them to retain information from previous steps.\n    *   **Examples:** Speech recognition, machine translation, text generation, sentiment analysis.\n    *   **Variants:** Long Short-Term Memory (LSTMs) and Gated Recurrent Units (GRUs) address the vanishing gradient problem in vanilla RNNs, allowing them to learn longer-term dependencies.\n*   **Transformers:** A more recent architecture that has revolutionized Natural Language Processing (NLP). They rely on 'attention mechanisms' to weigh the importance of different parts of the input sequence, overcoming some limitations of RNNs with long sequences.\n    *   **Examples:** Large Language Models (LLMs) like BERT and GPT series, machine translation, text summarization.\n\n**Context and Advantages:** Deep Learning has led to breakthroughs in AI, particularly in areas like computer vision, natural language processing, and speech recognition, often surpassing human-level performance on specific tasks. Its ability to learn complex, abstract features directly from raw data, combined with vast datasets and powerful hardware, has fueled its success. However, DL models often require massive amounts of data and significant computational resources, and their 'black box' nature can sometimes make interpretation challenging.",
+      "tokens_used": 1751,
+      "latency_ms": 20132.380999999998,
+      "created_at": "2026-02-01T13:33:18.569000Z",
+      "completed_at": "2026-02-01T13:33:38.701381Z"
+    }
+  },
+  {
+    "timestamp": "2026-02-01T13:43:17.606193+00:00",
+    "batch_id": "fac854a3-5078-4772-97aa-0d7ec52a7846",
+    "request": {
+      "username": "user@example.com",
+      "request_id": "b7f162f7-228a-4052-a733-1111ca9fe30f",
+      "prompt": "How do I configure API authentication?",
+      "created_at": "2026-02-01T13:43:07.219000Z",
+      "priority": 1
+    },
+    "response": {
+      "request_id": "b7f162f7-228a-4052-a733-1111ca9fe30f",
+      "username": "user@example.com",
+      "text": "Configuring API authentication depends heavily on the specific API and its chosen security model. Common methods include:\n1.  **API Keys:** Often sent in a header (e.g., `X-API-Key`) or query parameter. You obtain these from the API provider's dashboard.\n2.  **OAuth 2.0:** Involves obtaining an access token (via client credentials, authorization code, etc.) and sending it in the `Authorization: Bearer <token>` header. This is common for third-party integrations.\n3.  **JSON Web Tokens (JWT):** Similar to OAuth, a JWT is obtained and sent as a Bearer token, often containing user/session data.\n4.  **Basic Authentication:** Involves encoding a username and password (base64) and sending it in the `Authorization: Basic <encoded_credentials>` header.\nGenerally, you'll obtain your credentials from the service, then include them in your API requests, typically within the HTTP headers, or use an SDK that handles this for you.",
+      "tokens_used": 976,
+      "latency_ms": 10381.192000000001,
+      "created_at": "2026-02-01T13:43:07.219000Z",
+      "completed_at": "2026-02-01T13:43:17.600192Z"
+    }
+  },
+  {
+    "timestamp": "2026-02-01T13:43:17.730578+00:00",
+    "batch_id": "fac854a3-5078-4772-97aa-0d7ec52a7846",
+    "request": {
+      "username": "charan",
+      "request_id": "eda96692-a3dd-41d8-a0a2-e811b70a9451",
+      "prompt": "what is Rag",
+      "created_at": "2026-02-01T13:43:07.219000Z",
+      "priority": 1
+    },
+    "response": {
+      "request_id": "eda96692-a3dd-41d8-a0a2-e811b70a9451",
+      "username": "charan",
+      "text": "RAG stands for Retrieval-Augmented Generation, an AI technique designed to enhance the factual accuracy and relevance of Large Language Models (LLMs).\nIt works by:\n1.  **Retrieval:** When a user asks a question, the system first retrieves relevant information or documents from a separate, often external, knowledge base (like a database of company documents, articles, or a vector store).\n2.  **Augmentation:** This retrieved context is then provided to the LLM along with the original user query.\n3.  **Generation:** The LLM uses this augmented prompt to generate a more informed and accurate response, reducing the likelihood of 'hallucinations' and allowing it to answer questions based on up-to-date or proprietary data it wasn't originally trained on. This approach often enables source attribution and improves trustworthiness.",
+      "tokens_used": 975,
+      "latency_ms": 10381.192000000001,
+      "created_at": "2026-02-01T13:43:07.219000Z",
+      "completed_at": "2026-02-01T13:43:17.600192Z"
+    }
+  },
+  {
+    "timestamp": "2026-02-01T17:18:52.974478+00:00",
+    "batch_id": "ff5c1247-181a-4ec6-bee1-c7573ca13b32",
+    "request": {
+      "username": "Sri",
+      "request_id": "ebfa2c23-a88d-4c78-bfd7-7edede09a018",
+      "prompt": "What is DL?",
+      "created_at": "2026-02-01T17:18:29.006000Z",
+      "priority": 2
+    },
+    "response": {
+      "request_id": "ebfa2c23-a88d-4c78-bfd7-7edede09a018",
+      "username": "Sri",
+      "text": "Deep Learning (DL) is a subfield of machine learning that utilizes artificial neural networks with multiple layers to learn complex patterns. It excels in tasks like image recognition, natural language processing, and speech recognition by processing vast amounts of data.",
+      "tokens_used": 313,
+      "latency_ms": 23957.09,
+      "created_at": "2026-02-01T17:18:29.006000Z",
+      "completed_at": "2026-02-01T17:18:52.963090Z"
+    }
+  },
+  {
+    "timestamp": "2026-02-01T17:18:53.051924+00:00",
+    "batch_id": "ff5c1247-181a-4ec6-bee1-c7573ca13b32",
+    "request": {
+      "username": "Tejo",
+      "request_id": "ff14d93e-c02a-43ed-b758-d5aacb210e1d",
+      "prompt": "How do I configure API authentication?",
+      "created_at": "2026-02-01T17:18:29.004000Z",
+      "priority": 2
+    },
+    "response": {
+      "request_id": "ff14d93e-c02a-43ed-b758-d5aacb210e1d",
+      "username": "Tejo",
+      "text": "To configure API authentication, you typically obtain API keys or tokens from your service provider. These credentials are then included in your API requests, often in the request headers (e.g., Authorization: Bearer Token) or as query parameters, as specified by the API's documentation.",
+      "tokens_used": 312,
+      "latency_ms": 23959.09,
+      "created_at": "2026-02-01T17:18:29.004000Z",
+      "completed_at": "2026-02-01T17:18:52.963090Z"
+    }
+  },
+  {
+    "timestamp": "2026-02-01T17:18:53.098545+00:00",
+    "batch_id": "ff5c1247-181a-4ec6-bee1-c7573ca13b32",
+    "request": {
+      "username": "Ram",
+      "request_id": "a4c5523a-951c-4751-b516-1260e0ce31dc",
+      "prompt": "What is ML?",
+      "created_at": "2026-02-01T17:18:29.005000Z",
+      "priority": 2
+    },
+    "response": {
+      "request_id": "a4c5523a-951c-4751-b516-1260e0ce31dc",
+      "username": "Ram",
+      "text": "Machine Learning (ML) is a branch of artificial intelligence that allows systems to learn from data and improve performance on a specific task without explicit programming. It involves training algorithms on datasets to identify patterns and make predictions or decisions.",
+      "tokens_used": 312,
+      "latency_ms": 23958.09,
+      "created_at": "2026-02-01T17:18:29.005000Z",
+      "completed_at": "2026-02-01T17:18:52.963090Z"
+    }
+  },
+  {
+    "timestamp": "2026-02-01T17:18:53.853727+00:00",
+    "batch_id": "472ef094-d22a-493e-9947-c921bbddeb7f",
+    "request": {
+      "username": "Sai",
+      "request_id": "8ddcb7ba-8562-4570-b732-70e24b474c3b",
+      "prompt": "Who is Ratan Tata?",
+      "created_at": "2026-02-01T17:18:29.006000Z",
+      "priority": 1
+    },
+    "response": {
+      "request_id": "8ddcb7ba-8562-4570-b732-70e24b474c3b",
+      "username": "Sai",
+      "text": "Ratan Tata is a distinguished Indian industrialist, investor, and philanthropist. He served as the chairman of the Tata Group, a global conglomerate, from 1991 to 2012, and as interim chairman from 2016 to 2017. Under his leadership, the Tata Group underwent significant global expansion, notably acquiring companies like Tetley, Jaguar Land Rover, and Corus Steel. He is widely recognized for his ethical business practices, visionary leadership, and substantial contributions to India's economic development and social initiatives, having received India's highest civilian honors.",
+      "tokens_used": 512,
+      "latency_ms": 24839.44,
+      "created_at": "2026-02-01T17:18:29.006000Z",
+      "completed_at": "2026-02-01T17:18:53.845440Z"
+    }
+  },
+  {
+    "timestamp": "2026-02-01T17:18:53.901675+00:00",
+    "batch_id": "472ef094-d22a-493e-9947-c921bbddeb7f",
+    "request": {
+      "username": "Tarun",
+      "request_id": "d79a6993-a397-4721-9cc4-1a31ea05442d",
+      "prompt": "What is Gen AI?",
+      "created_at": "2026-02-01T17:18:29.006000Z",
+      "priority": 1
+    },
+    "response": {
+      "request_id": "d79a6993-a397-4721-9cc4-1a31ea05442d",
+      "username": "Tarun",
+      "text": "Generative AI (Gen AI) is a type of artificial intelligence that can create new, original content rather than merely analyzing or classifying existing data. It learns patterns, structures, and styles from vast datasets of text, images, audio, or other media, and then uses this understanding to generate novel outputs. Key models include Generative Adversarial Networks (GANs) and large language models (LLMs) based on transformer architectures. Gen AI applications span various fields, including generating realistic images, writing human-like text, creating music, designing code, and synthesizing data.",
+      "tokens_used": 511,
+      "latency_ms": 24839.44,
+      "created_at": "2026-02-01T17:18:29.006000Z",
+      "completed_at": "2026-02-01T17:18:53.845440Z"
+    }
+  },
+  {
+    "timestamp": "2026-02-01T17:18:57.752494+00:00",
+    "batch_id": "73dc4854-bb1c-4de4-9ac9-f712a0dc4314",
+    "request": {
+      "username": "Sampath",
+      "request_id": "e4e172a9-f8b8-4eff-9e64-e0d4b8e631cb",
+      "prompt": "what is Database?",
+      "created_at": "2026-02-01T17:18:29.007000Z",
+      "priority": 0
+    },
+    "response": {
+      "request_id": "e4e172a9-f8b8-4eff-9e64-e0d4b8e631cb",
+      "username": "Sampath",
+      "text": "A database is an organized collection of structured information, or data, typically stored electronically in a computer system. It is designed to efficiently store, retrieve, manage, and update vast amounts of information. More than just a simple collection of data, a database is fundamentally about providing a systematic way to organize, manipulate, and access information, making it valuable for various applications, from small personal projects to large enterprise systems.\n\n### Core Components and Concepts:\n\n1.  **Data**: This is the raw material – facts, figures, text, images, etc. – that the database stores. The data itself is meaningless without context and structure.\n2.  **Schema**: The blueprint or logical design of the database. It defines how data is organized, including table names, field names, data types, relationships between tables, and constraints (rules that data must follow).\n3.  **Database Management System (DBMS)**: This is the software that interacts with the end-users, applications, and the database itself to capture and analyze data. The DBMS provides tools and functionalities for:\n    *   **Data Definition**: Creating, modifying, or deleting the schema.\n    *   **Data Manipulation**: Inserting, retrieving, updating, or deleting data.\n    *   **Data Control**: Managing access permissions, concurrency, and ensuring data integrity and security.\n    *   **Backup and Recovery**: Protecting data from loss.\n    Common DBMS examples include MySQL, PostgreSQL, Oracle, Microsoft SQL Server, MongoDB, and Cassandra.\n4.  **Tables/Collections**: In most databases, data is organized into tables (in relational databases) or collections (in NoSQL document databases). Each table represents a specific entity (e.g., 'Customers', 'Products', 'Orders').\n5.  **Records/Rows/Documents**: These are individual entries within a table or collection. For instance, in a 'Customers' table, each row would represent a single customer.\n6.  **Fields/Columns/Attributes**: These are the individual pieces of information that make up a record. In a 'Customers' table, columns might include 'CustomerID', 'FirstName', 'LastName', 'Email', and 'Address'. Each column has a specific data type (e.g., integer, text, date).\n\n### Purpose and Benefits:\n\n*   **Efficient Data Storage and Retrieval**: Databases are optimized to store large volumes of data and retrieve specific pieces of information quickly.\n*   **Data Integrity**: They enforce rules (constraints) to ensure the accuracy and consistency of data, preventing invalid entries (e.g., ensuring a customer ID is unique).\n*   **Data Security**: Databases offer mechanisms for access control, allowing administrators to define who can access, modify, or delete specific data.\n*   **Data Concurrency**: They allow multiple users or applications to access and modify data simultaneously without corrupting it.\n*   **Reduced Data Redundancy**: By organizing data logically, databases help minimize duplication of information, saving storage space and improving consistency.\n*   **Data Independence**: The ability to modify the database schema without needing to change the applications that access the data, and vice versa.\n\n### Types of Databases:\n\n1.  **Relational Databases (RDBMS)**: The most common type, based on the relational model. Data is organized into tables with rows and columns, and relationships between tables are defined using keys. They use **SQL (Structured Query Language)** for data definition and manipulation. They adhere to **ACID properties** (Atomicity, Consistency, Isolation, Durability) to ensure reliable transactions. Examples: MySQL, PostgreSQL, Oracle Database, Microsoft SQL Server.\n2.  **NoSQL Databases**: Designed for specific data models and flexible schemas, often used for large datasets and distributed architectures. They often prioritize availability and partition tolerance over strict consistency (following **BASE properties** – Basically Available, Soft state, Eventually consistent). Types include:\n    *   **Document Databases**: Store data in flexible, semi-structured formats like JSON documents. Example: MongoDB.\n    *   **Key-Value Databases**: Store data as a collection of key-value pairs. Example: Redis, DynamoDB.\n    *   **Column-Family Databases**: Store data in columns rather than rows, optimized for wide columns and distributed systems. Example: Apache Cassandra.\n    *   **Graph Databases**: Use nodes and edges to represent and store relationships between data entities, ideal for highly interconnected data. Example: Neo4j.\n3.  **Other Types**: Object-Oriented Databases, Hierarchical Databases, Network Databases, In-memory Databases, Time-series Databases, and Cloud Databases.\n\n### Real-World Examples:\n\nDatabases are ubiquitous and power almost every digital interaction:\n*   **Online Banking**: Stores customer accounts, transactions, balances.\n*   **E-commerce Websites**: Manages product catalogs, customer orders, shipping information.\n*   **Social Media Platforms**: Stores user profiles, posts, friendships, messages.\n*   **Flight Reservation Systems**: Tracks flights, seat availability, passenger bookings.\n*   **Healthcare Systems**: Stores patient records, appointments, medical history.\n\nIn essence, a database is more than just a place to dump information; it's a sophisticated system crucial for managing and making sense of the ever-growing volume of data that drives modern society and technology.",
+      "tokens_used": 1851,
+      "latency_ms": 28736.636000000002,
+      "created_at": "2026-02-01T17:18:29.007000Z",
+      "completed_at": "2026-02-01T17:18:57.743636Z"
+    }
+  },
+  {
+    "timestamp": "2026-02-01T17:19:07.471483+00:00",
+    "batch_id": "a2097b83-0b6d-482b-b2d9-8d54da7b6da1",
+    "request": {
+      "username": "venkat",
+      "request_id": "92a781b6-7286-4d27-8dd4-01fcdbb02182",
+      "prompt": "what is Rag?",
+      "created_at": "2026-02-01T17:18:29.007000Z",
+      "priority": 0
+    },
+    "response": {
+      "request_id": "92a781b6-7286-4d27-8dd4-01fcdbb02182",
+      "username": "venkat",
+      "text": "Retrieval Augmented Generation (RAG) is an artificial intelligence framework designed to enhance the capabilities of large language models (LLMs) by giving them access to external, up-to-date, and domain-specific information beyond their original training data. The core idea behind RAG is to first retrieve relevant information from a knowledge base and then use that retrieved information to ground the LLM's generation, leading to more accurate, factual, and contextually rich responses.\n\n**Context and Problem Solved:**\nLLMs, despite their vast training data, inherently suffer from several limitations:\n1.  **Hallucination:** They can generate plausible-sounding but factually incorrect or nonsensical information because they are trained to predict the next token based on patterns, not necessarily on truth.\n2.  **Out-of-date Information:** Their knowledge is static, based on the cutoff date of their training data. They cannot access real-time events or recent developments.\n3.  **Lack of Domain-Specific Knowledge:** While generalists, they may lack deep, specialized knowledge required for specific industries, internal company documents, or niche topics.\n4.  **Traceability/Explainability:** It's often hard to determine the source of an LLM's answer, making verification difficult.\n\nRAG addresses these issues by providing a mechanism for LLMs to access an authoritative, external knowledge source 'on the fly' during inference.\n\n**How RAG Works (Steps Involved):**\n1.  **Indexing/Preparation (Offline Phase):**\n    *   **Data Collection:** Gather all relevant documents (e.g., articles, PDFs, databases, web pages, internal memos, legal texts, research papers). This is your external knowledge base.\n    *   **Chunking:** Break down large documents into smaller, manageable segments or 'chunks.' This is crucial because embedding models have token limits, and smaller chunks allow for more precise retrieval.\n    *   **Embedding:** Each chunk is converted into a numerical vector (an 'embedding') using an embedding model (e.g., OpenAI's `text-embedding-ada-002`, Sentence Transformers). These embeddings capture the semantic meaning of the text.\n    *   **Vector Database Storage:** These vector embeddings, along with references back to their original text chunks, are stored in a specialized database called a vector database (e.g., Pinecone, Weaviate, Chroma, Milvus). This database is optimized for fast similarity searches.\n\n2.  **Retrieval (Online/Query Phase):**\n    *   **User Query:** A user submits a query or prompt to the RAG system.\n    *   **Query Embedding:** The user's query is also converted into a vector embedding using the *same* embedding model used in the indexing phase.\n    *   **Similarity Search:** The query embedding is used to perform a similarity search (e.g., cosine similarity) against all the document chunk embeddings stored in the vector database. The goal is to find the 'top-k' (e.g., 3-5) most semantically similar chunks to the user's query.\n    *   **Context Retrieval:** The original text content corresponding to these top-k similar chunks is retrieved from the vector database.\n\n3.  **Augmentation and Generation (Online Phase):**\n    *   **Prompt Construction:** The retrieved text chunks are then combined with the original user query and a system instruction (e.g., 'Answer the following question based *only* on the provided context.') to form a new, augmented prompt.\n    *   **LLM Inference:** This augmented prompt is fed into a powerful LLM (e.g., GPT-4, Llama, Claude). The LLM is instructed to generate an answer primarily using the provided context, rather than relying solely on its internal, pre-trained knowledge.\n    *   **Response Generation:** The LLM processes the augmented prompt and generates a response that is grounded in the retrieved factual information.\n\n**Components of a RAG System:**\n*   **Knowledge Base:** The collection of external documents.\n*   **Chunking Strategy:** How documents are split (e.g., fixed size, semantic splitting).\n*   **Embedding Model:** Converts text to vectors.\n*   **Vector Database:** Stores and indexes embeddings for fast retrieval.\n*   **Retriever:** The component that performs the similarity search (often part of the vector DB or an orchestrator).\n*   **LLM:** The generative model that synthesizes the final answer.\n*   **Orchestration Logic:** Manages the flow from query to retrieval to generation.\n\n**Benefits of RAG:**\n*   **Factuality & Accuracy:** Reduces hallucinations by grounding responses in verifiable data.\n*   **Up-to-Date Information:** Allows LLMs to access the latest information simply by updating the knowledge base.\n*   **Domain Specificity:** Enables LLMs to answer questions about proprietary or niche information not present in their training data.\n*   **Reduced Training Costs:** Eliminates the need to fine-tune or re-train LLMs for new information, which is expensive and time-consuming.\n*   **Traceability & Explainability:** The system can often cite the source documents or chunks used to generate the answer, enhancing trust and verifiability.\n*   **Cost-Effective:** Often more economical than continuous fine-tuning or building domain-specific models from scratch.\n\n**Limitations of RAG:**\n*   **Retrieval Quality:** The quality of the generated answer is highly dependent on the quality and relevance of the retrieved chunks. Poor retrieval leads to poor answers (the 'garbage in, garbage out' principle).\n*   **Context Window Limits:** LLMs have a maximum context window. If too many relevant chunks are retrieved, or the chunks are too large, they might exceed this limit.\n*   **Complexity:** Designing and maintaining a robust RAG system, including chunking strategies, embedding model selection, and vector database management, can be complex.\n*   **Latency:** The retrieval step adds latency compared to a pure generative LLM, though typically minimal for optimized systems.\n*   **Still Prone to LLM Flaws:** While reducing hallucinations, RAG doesn't completely eliminate them, as the LLM still interprets the context and can misinterpret or slightly deviate from it.\n\n**Examples of RAG Use Cases:**\n*   **Customer Support Chatbots:** Answering customer queries based on a company's product manuals, FAQs, and support documentation.\n*   **Internal Knowledge Management:** Allowing employees to query internal company policies, HR documents, or project specifications.\n*   **Legal Research:** Helping lawyers find relevant precedents and statutes from vast legal databases.\n*   **Medical Information Systems:** Providing doctors with up-to-date research, drug interactions, and patient histories.\n*   **Educational Tools:** Creating interactive learning experiences that draw from specific textbooks or academic papers.\n*   **Financial Analysis:** Querying financial reports, market data, and company filings for insights.",
+      "tokens_used": 1804,
+      "latency_ms": 38458.79,
+      "created_at": "2026-02-01T17:18:29.007000Z",
+      "completed_at": "2026-02-01T17:19:07.465790Z"
+    }
+  }
+]

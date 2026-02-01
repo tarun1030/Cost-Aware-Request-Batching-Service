@@ -1,0 +1,15 @@
+{
+  "api_key": "AIzaSyBqCd-ceMxF0QOadYPNkNA5xMI5JA3loSU",
+  "low_priority": {
+    "tokens": 1800,
+    "latency_ms": 500
+  },
+  "medium_priority": {
+    "tokens": 1024,
+    "latency_ms": 500
+  },
+  "high_priority": {
+    "tokens": 512,
+    "latency_ms": 500
+  }
+}

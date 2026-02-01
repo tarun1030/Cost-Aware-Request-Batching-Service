@@ -1,0 +1,17 @@
+# FastAPI and server
+fastapi>=0.115.0
+uvicorn[standard]>=0.32.0
+
+# Config and validation
+pydantic>=2.0.0
+pydantic-settings>=2.0.0
+
+# HTTP client (simulator and tests)
+httpx>=0.27.0
+
+# Gemini API
+google-genai>=1.0.0
+
+# Testing
+pytest>=8.0.0
+pytest-asyncio>=0.24.0

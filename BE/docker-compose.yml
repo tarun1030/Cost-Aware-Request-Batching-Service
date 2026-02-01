@@ -1,0 +1,13 @@
+# Optional: run the FastAPI app in Docker
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    environment:
+      - USE_MOCK_LLM=true
+      - BATCH_SIZE=10
+      - BATCH_TIMEOUT_SECONDS=1.0
+    restart: unless-stopped
