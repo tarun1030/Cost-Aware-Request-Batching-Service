@@ -125,7 +125,7 @@ The frontend expects the following endpoints and shapes. Backend must be running
 ### Install
 
 ```bash
-pnpm install
+npm install
 ```
 
 ### Environment
@@ -141,7 +141,7 @@ Replace with your backend base URL if different.
 ### Run
 
 ```bash
-pnpm dev
+npm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000). Ensure the backend is running and reachable at `NEXT_PUBLIC_API_URL`.
