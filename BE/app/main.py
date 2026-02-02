@@ -1,11 +1,14 @@
-"""FastAPI application entry point."""
+"""FastAPI application entry point with streaming support."""
 
 import logging
+import asyncio
+import json
 
 from contextlib import asynccontextmanager
 
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import StreamingResponse
 
 from app.batch_processor import BatchProcessor
 from app.chat_store import get_analytics, get_chats
@@ -67,32 +70,67 @@ async def health() -> HealthResponse:
     return HealthResponse()
 
 
-# api.py
-from fastapi import HTTPException
-import asyncio
-
-@app.post("/v1/query", response_model=GenerationResponse)
-async def complete(request: GenerationRequest) -> GenerationResponse:
+@app.post("/v1/query")
+async def complete(request: GenerationRequest):
+    """Stream LLM response to client word by word."""
     if queue_manager is None:
         raise RuntimeError("Queue manager not initialized.")
 
-    try:
-        # Timeout from configured latency (ms) + buffer for queue and LLM
-        th = get_thresholds(request.priority.name)
-        timeout_seconds = th["latency_ms"] / 1000.0 + 30.0
+    async def generate_stream():
+        try:
+            # Timeout from configured latency (ms) + buffer for queue and LLM
+            th = get_thresholds(request.priority.name)
+            timeout_seconds = th["latency_ms"] / 1000.0 + 30.0
 
-        response = await asyncio.wait_for(
-            queue_manager.enqueue(request),
-            timeout=timeout_seconds
-        )
+            response = await asyncio.wait_for(
+                queue_manager.enqueue(request),
+                timeout=timeout_seconds
+            )
 
-        return response
+            # Stream the response text word by word
+            words = response.text.split()
+            for i, word in enumerate(words):
+                chunk = {
+                    "type": "text",
+                    "content": word + (" " if i < len(words) - 1 else ""),
+                }
+                yield f"data: {json.dumps(chunk)}\n\n"
+                await asyncio.sleep(0.05)  # Small delay between words for streaming effect
 
-    except asyncio.TimeoutError:
-        raise HTTPException(
-            status_code=504,
-            detail=f"Request timed out after {timeout_seconds}s. Please try again."
-        )
+            # Send final metadata
+            final_chunk = {
+                "type": "done",
+                "request_id": response.request_id,
+                "username": response.username,
+                "tokens_used": response.tokens_used,
+                "latency_ms": response.latency_ms,
+                "created_at": response.created_at.isoformat(),
+                "completed_at": response.completed_at.isoformat(),
+            }
+            yield f"data: {json.dumps(final_chunk)}\n\n"
+
+        except asyncio.TimeoutError:
+            error_chunk = {
+                "type": "error",
+                "message": f"Request timed out after {timeout_seconds}s. Please try again."
+            }
+            yield f"data: {json.dumps(error_chunk)}\n\n"
+        except Exception as e:
+            error_chunk = {
+                "type": "error",
+                "message": str(e)
+            }
+            yield f"data: {json.dumps(error_chunk)}\n\n"
+
+    return StreamingResponse(
+        generate_stream(),
+        media_type="text/event-stream",
+        headers={
+            "Cache-Control": "no-cache",
+            "Connection": "keep-alive",
+            "X-Accel-Buffering": "no",
+        }
+    )
 
 
 @app.get("/v1/chat")

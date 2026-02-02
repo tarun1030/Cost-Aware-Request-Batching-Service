@@ -8,9 +8,9 @@ import { putSettings } from '@/lib/settings-api';
 export default function SettingsPage() {
   const [apiKey, setApiKey] = useState('');
   const [thresholds, setThresholds] = useState({
-    high: { tokens: 1000, latency: 500 },
-    medium: { tokens: 5000, latency: 2000 },
-    low: { tokens: 10000, latency: 5000 },
+    high: { tokens: 512, latency: 500 },
+    medium: { tokens: 1024, latency: 500 },
+    low: { tokens: 1800, latency: 500 },
   });
   const [settingsError, setSettingsError] = useState<string | null>(null);
 

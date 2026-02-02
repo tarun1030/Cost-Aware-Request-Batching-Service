@@ -78,30 +78,43 @@ export default function ChatsPage() {
     if (!card || !card.query.trim() || !card.username.trim()) return;
 
     const requestId = crypto.randomUUID();
-    updateCard(id, { loading: true, requestId });
+    updateCard(id, { loading: true, requestId, response: '' });
 
-    try {
-      const res = await submitQuery(
-        requestId,
-        card.username.trim(),
-        card.query.trim(),
-        card.priority
-      );
-      updateCard(id, {
-        loading: false,
-        response: res.text,
-        timestamp: new Date(res.completed_at).toLocaleTimeString(),
-        tokensUsed: res.tokens_used,
-        latencyMs: res.latency_ms,
-        requestId: res.request_id,
-      });
-    } catch (err) {
-      updateCard(id, {
-        loading: false,
-        response: `Error: ${err instanceof Error ? err.message : 'Request failed'}`,
-        timestamp: new Date().toLocaleTimeString(),
-      });
-    }
+    // Track accumulated response text using closure
+    let accumulatedResponse = '';
+
+    submitQuery(
+      requestId,
+      card.username.trim(),
+      card.query.trim(),
+      card.priority,
+      // onChunk: append streaming text
+      (chunk: string) => {
+        accumulatedResponse += chunk;
+        updateCard(id, {
+          response: accumulatedResponse,
+        });
+      },
+      // onComplete: set final metadata
+      (response) => {
+        updateCard(id, {
+          loading: false,
+          response: response.text,
+          timestamp: new Date(response.completed_at).toLocaleTimeString(),
+          tokensUsed: response.tokens_used,
+          latencyMs: response.latency_ms,
+          requestId: response.request_id,
+        });
+      },
+      // onError: show error message
+      (error: string) => {
+        updateCard(id, {
+          loading: false,
+          response: `Error: ${error}`,
+          timestamp: new Date().toLocaleTimeString(),
+        });
+      }
+    );
   };
 
   const submitAll = async () => {

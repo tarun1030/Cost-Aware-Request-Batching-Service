@@ -26,9 +26,9 @@ class QueueManager:
         self.lock = asyncio.Lock()
 
         self.windows = {
-            "HIGH": 0.2,
+            "HIGH": 0.5,
             "MEDIUM": 1.0,
-            "LOW": 4.0
+            "LOW": 5.0
         }
 
         self.max_batch = {
